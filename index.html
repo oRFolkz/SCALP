@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AQ Scalp Blend | Ozonoterapia Capilar Avançada para Queda e Crescimento</title>
+  <meta name="description" content="Protocolo clínico de ozonioterapia tópica. Reduz a queda em 80% e estimula novos fios com Melaleuca, Copaíba e Canela Ozonizados.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+    
+    :root {
+      --font-main: 'Montserrat', sans-serif;
+      --brand-primary: #063326;
+      --brand-gold: #deb357;
+    }
+
+    body {
+      font-family: var(--font-main);
+      scroll-behavior: smooth;
+      color: #3D3935;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1300px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .text-16 {
+      font-size: 16px !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, span, a, button, li, div {
+      font-family: var(--font-main) !important;
+    }
+
+    .animeTexto {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.2, 0, 0.2, 1);
+    }
+
+    .animeTexto.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .animeZoom {
+      overflow: hidden;
+    }
+
+    .animeZoom img, .animeZoom video {
+      transition: transform 2s cubic-bezier(0.2, 0, 0.2, 1);
+      transform: scale(1.1);
+    }
+
+    .animeZoom.active img, .animeZoom.active video {
+      transform: scale(1);
+    }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+      "react/": "https://esm.sh/react@^19.2.3/",
+      "react": "https://esm.sh/react@^19.2.3"
+    }
+  }
+  </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-white">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

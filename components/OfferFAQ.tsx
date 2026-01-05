@@ -16,12 +16,18 @@ export const OfferFAQ: React.FC = () => {
   return (
     <section id="faq" className="py-24 bg-[#F1F5F2] border-t border-gray-100">
       <div className="container mx-auto px-4">
-        <div ref={reveal.ref} className={`max-w-3xl mx-auto animeTexto ${reveal.className}`}>
+        <div ref={reveal.ref} className={`w-full max-w-2xl mx-auto animeTexto ${reveal.className}`}>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#063326] mb-4">
-              Perguntas <span className="font-normal italic">Frequentes</span>
+            {/* Kicker */}
+            <p className="text-[#E3C08D] font-bold text-[12px] uppercase tracking-[0.2em] mb-4">
+              DÚVIDAS FREQUENTES
+            </p>
+
+            {/* Título */}
+            <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-4 leading-[1]">
+              Perguntas <span className="font-normal">Frequentes</span>
             </h2>
-            <p className="text-gray-400 font-light">Tudo o que você precisa saber sobre o Protocolo AQ Scalp Blend.</p>
+            <p className="text-gray-400 font-light text-[14px]">Tudo o que você precisa saber sobre o Protocolo AQ Scalp Blend.</p>
           </div>
 
           <div className="space-y-4">
@@ -31,22 +37,18 @@ export const OfferFAQ: React.FC = () => {
                   className="w-full p-6 flex justify-between items-center text-left hover:bg-gray-50 transition-colors"
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 >
-                  <span className="font-bold text-[#063326] text-lg pr-4">{faq.q}</span>
+                  <span className="font-bold text-[#063326] text-[14px] pr-4">{faq.q}</span>
                   <div className={`w-8 h-8 rounded-full border border-[#deb357]/30 flex items-center justify-center transition-transform duration-300 ${openIndex === i ? 'rotate-180 bg-[#deb357] text-white' : 'text-[#deb357]'}`}>
                     <i className={`fa-solid ${openIndex === i ? 'fa-minus' : 'fa-plus'} text-xs`}></i>
                   </div>
                 </button>
                 <div className={`overflow-hidden transition-all duration-300 ${openIndex === i ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'}`}>
-                  <div className="p-6 pt-0 text-gray-500 font-light leading-relaxed border-t border-gray-50">
+                  <div className="p-6 pt-0 text-gray-500 font-light leading-relaxed border-t border-gray-50 text-[14px]">
                     {faq.a}
                   </div>
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="mt-16 text-center">
-            <p className="text-gray-400 text-xs font-bold uppercase tracking-[0.2em]">Ainda tem dúvidas? Fale com nosso suporte especializado.</p>
           </div>
         </div>
       </div>

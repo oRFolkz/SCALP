@@ -28,8 +28,14 @@ export const UsageSteps: React.FC = () => {
       <div className="container mx-auto px-4">
         {/* Cabeçalho da Seção */}
         <div ref={reveal.ref} className={`text-center max-w-2xl mx-auto mb-20 animeTexto ${reveal.className}`}>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#063326] mb-4">
-            Seu ritual em <span className="font-normal italic">três atos</span>
+          {/* Kicker */}
+          <p className="text-[#E3C08D] font-bold text-xs uppercase tracking-[0.2em] mb-4">
+            MODO DE USO
+          </p>
+
+          {/* Título */}
+          <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-4 leading-tight">
+            Seu ritual em <span className="font-normal">três atos</span>
           </h2>
         </div>
 

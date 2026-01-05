@@ -26,49 +26,27 @@ export const Hero: React.FC = () => {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-[#F4F7F5] z-0 hidden lg:block"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-wrap -mx-4 items-center">
+        <div className="flex flex-wrap -mx-4 items-start">
           
           {/* Coluna de Texto (Esquerda) */}
-          <div className="w-full lg:w-6/12 px-4 mb-16 lg:mb-0">
+          <div className="w-full lg:w-6/12 px-4 mb-16 lg:mb-0 pt-12">
             <div ref={reveal.ref} className={`animeTexto ${reveal.className}`}>
-              <div className="inline-flex items-center gap-4 mb-8">
-                <span className="h-px w-12 bg-[#deb357]"></span>
-                <span className="text-[10px] md:text-xs font-extrabold tracking-[0.4em] text-[#deb357] uppercase">
-                  Tecnologia Natural Antiqueda
-                </span>
-              </div>
+              {/* Kicker - Padrão Novo (12px Uppercase Bold) */}
+              <p className="text-[#E3C08D] font-bold text-[12px] uppercase tracking-[0.2em] mb-4">
+                FÓRMULA EXCLUSIVA
+              </p>
               
-              <h1 className="text-4xl md:text-[46px] font-extrabold text-[#063326] mb-8 leading-[1.1] tracking-tight">
+              {/* Título Principal - Padrão Novo (30px Mobile / 44px Desktop) */}
+              <h1 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-8 leading-[1] tracking-tight">
                 Não é apenas óleo. <br />
                 É oxigênio puro <br className="hidden md:block" />
-                para <span className="font-normal italic font-serif whitespace-nowrap">a raiz do seu cabelo.</span>
+                para <span className="font-normal">a raiz do seu cabelo.</span>
               </h1>
               
               <div className="max-w-xl mb-12">
-                <p className="text-[#555] text-lg md:text-xl leading-relaxed font-light">
-                  Quando a raiz não recebe oxigênio suficiente, os <strong>fios enfraquecem e caem</strong>. Nosso protocolo ozonizado atua exatamente nesse ponto. Reduza a queda em <span className="text-[#063326] font-bold">80%</span> e ative o crescimento de novos fios com a potência do Ozônio Medicinal estabilizado.
+                <p className="text-[#555] text-[14px] leading-relaxed font-light">
+                  Quando a raiz não recebe oxigênio suficiente, os <strong className="font-bold">fios enfraquecem e caem</strong>. Nosso protocolo ozonizado atua exatamente nesse ponto. Reduza a queda em <span className="text-[#063326] font-bold">80%</span> e ative o crescimento de novos fios com a potência do Ozônio Medicinal estabilizado.
                 </p>
-              </div>
-
-              {/* CTA e Status */}
-              <div className="flex flex-col sm:flex-row items-center gap-8 mb-16">
-                <div className="relative group w-full sm:w-auto">
-                  <div className="absolute -inset-1 bg-[#063326]/10 rounded-xl blur-lg opacity-40 group-hover:opacity-70 transition duration-1000"></div>
-                  <a href="#offer" className="relative w-full sm:w-auto bg-[#063326] block text-center text-white px-12 py-5 text-16 font-bold uppercase tracking-[0.2em] hover:bg-black transition-all shadow-xl rounded-xl">
-                    Quero Ativar Meu Crescimento
-                  </a>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                  </span>
-                  <div className="flex flex-col">
-                    <p className="text-[#063326] text-[10px] font-bold uppercase tracking-widest">Status do pedido</p>
-                    <p className="text-gray-400 text-[10px] font-medium uppercase tracking-widest">Envio imediato para todo o Brasil</p>
-                  </div>
-                </div>
               </div>
 
               {/* Trust Badges */}
@@ -80,7 +58,7 @@ export const Hero: React.FC = () => {
                       <path d="M9 12L11 14L15 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </span>
-                  <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#063326]/60">Eficácia Comprovada</span>
+                  <span className="text-[12px] font-bold uppercase tracking-[0.15em] text-[#063326]/60">Eficácia Comprovada</span>
                 </div>
                 
                 {[
@@ -89,10 +67,45 @@ export const Hero: React.FC = () => {
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <i className={`fa-solid ${item.icon} text-[#063326]/30 text-xs`}></i>
-                    <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#063326]/60">{item.text}</span>
+                    <span className="text-[12px] font-bold uppercase tracking-[0.15em] text-[#063326]/60">{item.text}</span>
                   </div>
                 ))}
               </div>
+
+              {/* Depoimentos Adicionados - Atualizado para layout horizontal sem fotos */}
+              <div className="mt-16 pt-10 border-t border-[#063326]/10 w-full">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#063326]/40 mb-6">
+                  Histórias Reais
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {/* Testimonial 1 */}
+                  <div className="flex flex-col items-start">
+                     <div className="flex gap-1 mb-3">
+                        {[1,2,3,4,5].map(i => <i key={i} className="fa-solid fa-star text-[10px] text-[#deb357]"></i>)}
+                     </div>
+                     <p className="text-[#555] text-[13px] font-medium leading-relaxed italic mb-3">
+                        "Recuperei minha autoestima. Em 40 dias a diferença é brutal, as falhas sumiram."
+                     </p>
+                     <p className="text-[#063326] text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+                        Roberto M. <i className="fa-solid fa-circle-check text-green-500 text-[8px]"></i>
+                     </p>
+                  </div>
+
+                  {/* Testimonial 2 */}
+                  <div className="flex flex-col items-start">
+                     <div className="flex gap-1 mb-3">
+                        {[1,2,3,4,5].map(i => <i key={i} className="fa-solid fa-star text-[10px] text-[#deb357]"></i>)}
+                     </div>
+                     <p className="text-[#555] text-[13px] font-medium leading-relaxed italic mb-3">
+                        "Sensação de limpeza incrível e os fios novos aparecendo na linha da testa."
+                     </p>
+                     <p className="text-[#063326] text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+                        Ana Paula S. <i className="fa-solid fa-circle-check text-green-500 text-[8px]"></i>
+                     </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 

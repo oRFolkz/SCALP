@@ -15,8 +15,14 @@ export const BenefitsProof: React.FC = () => {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div ref={reveal.ref} className={`text-center mb-20 animeTexto ${reveal.className}`}>
-          <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-4">
-            Resultados que você vê no espelho e <span className="font-normal italic">sente no toque</span>
+          {/* Kicker */}
+          <p className="text-[#E3C08D] font-bold text-[12px] uppercase tracking-[0.2em] mb-4">
+            EFICÁCIA COMPROVADA
+          </p>
+          
+          {/* Título */}
+          <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-4 leading-[1]">
+            Resultados que você vê no espelho e <span className="font-normal">sente no toque</span>
           </h2>
         </div>
 
@@ -31,7 +37,7 @@ export const BenefitsProof: React.FC = () => {
                 {stat.value}
               </p>
               <h4 className="text-lg font-bold text-[#063326] uppercase tracking-wider mb-2">{stat.label}</h4>
-              <p className="text-gray-400 text-sm font-light">{stat.detail}</p>
+              <p className="text-gray-400 text-[12px] font-light">{stat.detail}</p>
             </div>
           ))}
         </div>
@@ -51,8 +57,8 @@ export const BenefitsProof: React.FC = () => {
                       <i className="fa-solid fa-check text-[10px]"></i>
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#063326] text-16">{item.title}</h4>
-                      <p className="text-gray-400 text-sm font-light">{item.desc}</p>
+                      <h4 className="font-bold text-[#063326] text-[14px]">{item.title}</h4>
+                      <p className="text-gray-400 text-[14px] font-light">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -71,7 +77,7 @@ export const BenefitsProof: React.FC = () => {
                    <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center font-bold">MS</div>
                    <div>
                       <p className="font-bold text-lg uppercase tracking-widest">Mariana S.</p>
-                      <p className="text-[#deb357] text-xs font-bold uppercase tracking-widest">Participante do Estudo Clínico</p>
+                      <p className="text-[#deb357] text-[12px] font-bold uppercase tracking-widest">Participante do Estudo Clínico</p>
                    </div>
                 </div>
              </div>

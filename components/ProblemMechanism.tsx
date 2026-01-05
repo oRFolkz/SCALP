@@ -6,26 +6,31 @@ export const ProblemMechanism: React.FC = () => {
   const reveal = useReveal();
 
   return (
-    <section className="py-16 md:py-24 bg-[#F1F5F2] overflow-hidden">
+    <section className="py-24 bg-[#F1F5F2] overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4 items-start lg:items-center">
           
           {/* Coluna da Esquerda: Problema + Explicação Técnica */}
-          <div className="w-full lg:w-7/12 px-4 mb-12 lg:mb-0">
+          <div className="w-full lg:w-7/12 px-4 mb-16 lg:mb-0">
             <div ref={reveal.ref} className={`animeTexto ${reveal.className}`}>
-              {/* Headline integrada */}
-              <h2 className="text-3xl md:text-4xl font-extrabold text-[#063326] mb-6 leading-tight">
+              {/* Kicker */}
+              <p className="text-[#E3C08D] font-bold text-[12px] uppercase tracking-[0.2em] mb-4">
+                ENTENDA O PROBLEMA
+              </p>
+              
+              {/* Headline */}
+              <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-8 leading-[1] tracking-tight">
                 Por que seu cabelo parou de <br />
-                <span className="font-normal italic font-serif">responder aos tratamentos comuns?</span>
+                <span className="font-normal">responder aos tratamentos comuns?</span>
               </h2>
               
               {/* Copy de introdução compactada */}
-              <div className="space-y-4 text-gray-600 text-base md:text-lg font-light leading-relaxed mb-10">
+              <div className="space-y-4 text-gray-600 text-[14px] font-light leading-relaxed mb-12">
                 <p>
-                  Você aplica tônicos, toma vitaminas e usa shampoos caros, mas a queda persiste. O motivo não é o fio, é o <strong>terreno</strong>.
+                  Você aplica tônicos, toma vitaminas e usa shampoos caros, mas a queda persiste. O motivo não é o fio, é o <strong className="font-bold">terreno</strong>.
                 </p>
                 <p>
-                  Assim como a pele, seu couro cabeludo sofre com a oxidação e inflamação silenciosa causada por estresse e poluição. Um folículo sem oxigênio entra em dormência. Ele não morre, ele apenas <strong>para de trabalhar</strong>.
+                  Assim como a pele, seu couro cabeludo sofre com a oxidação e inflamação silenciosa causada por estresse e poluição. Um folículo sem oxigênio entra em dormência. Ele não morre, ele apenas <strong className="font-bold">para de trabalhar</strong>.
                 </p>
               </div>
 
@@ -37,8 +42,8 @@ export const ProblemMechanism: React.FC = () => {
                   </span>
                   A Revolução do Ozônio (O3)
                 </h3>
-                <p className="text-gray-500 text-sm md:text-base font-light mb-8 leading-relaxed">
-                  A tecnologia <strong>AQ - Scalp Blend</strong> infunde Ozônio Ativo em óleos vegetais nobres. Ao tocar a pele, o ozônio libera oxigênio nascente, reativando a microcirculação e eliminando fungos e bactérias que bloqueiam o crescimento.
+                <p className="text-gray-500 text-[14px] font-light mb-8 leading-relaxed">
+                  A tecnologia <strong className="font-bold">AQ - Scalp Blend</strong> infunde Ozônio Ativo em óleos vegetais nobres. Ao tocar a pele, o ozônio libera oxigênio nascente, reativando a microcirculação e eliminando fungos e bactérias que bloqueiam o crescimento.
                 </p>
                 
                 {/* Lista de benefícios mais compacta */}
@@ -52,7 +57,7 @@ export const ProblemMechanism: React.FC = () => {
                       <div className="text-[#deb357] text-sm">
                         <i className={`fa-solid ${item.icon}`}></i>
                       </div>
-                      <h4 className="font-bold text-[#063326] uppercase text-[10px] tracking-widest leading-tight">{item.title}</h4>
+                      <h4 className="font-bold text-[#063326] uppercase text-[12px] tracking-widest leading-tight">{item.title}</h4>
                     </div>
                   ))}
                 </div>
@@ -77,7 +82,7 @@ export const ProblemMechanism: React.FC = () => {
               
               {/* Badge de Overlay */}
               <div className="absolute top-6 right-6 z-10">
-                <div className="bg-[#deb357] text-[#063326] text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-2xl">
+                <div className="bg-[#deb357] text-[#063326] text-[12px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-2xl">
                   Assista o Vídeo
                 </div>
               </div>

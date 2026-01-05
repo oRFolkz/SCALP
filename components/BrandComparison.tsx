@@ -42,26 +42,32 @@ export const BrandComparison: React.FC = () => {
     <section className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div ref={reveal.ref} className={`text-center mb-16 animeTexto ${reveal.className}`}>
-          <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-4 uppercase tracking-tighter">
-            DIFERENCIAIS <span className="text-[#deb357]">CORPORE LIFE</span>
+          {/* Kicker */}
+          <p className="text-[#E3C08D] font-bold text-[12px] uppercase tracking-[0.2em] mb-4">
+            POR QUE ESCOLHER
+          </p>
+
+          {/* Título */}
+          <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-4 leading-[1]">
+            Diferenciais <span className="font-normal text-[#E3C08D]">Corpore Life</span>
           </h2>
-          <p className="text-gray-500 text-lg font-light max-w-2xl mx-auto">
+          <p className="text-gray-500 text-[14px] font-light max-w-2xl mx-auto">
             Entenda por que somos a escolha número 1 de especialistas em tricologia natural.
           </p>
         </div>
 
-        <div className={`max-w-5xl mx-auto animeTexto ${reveal.className}`} style={{ transitionDelay: '200ms' }}>
+        <div className={`w-full animeTexto ${reveal.className}`} style={{ transitionDelay: '200ms' }}>
           <div className="bg-[#F8F9FA] rounded-[32px] overflow-hidden shadow-2xl border border-gray-100">
             {/* Header da Tabela */}
             <div className="grid grid-cols-1 md:grid-cols-3 bg-[#063326] text-white py-10 px-6 md:px-12 text-center md:text-left items-center">
               <div className="hidden md:block">
-                <p className="text-xs font-bold uppercase tracking-[0.3em] opacity-40">Característica</p>
+                <p className="text-[12px] font-bold uppercase tracking-[0.3em] opacity-40">Característica</p>
               </div>
               <div className="mb-4 md:mb-0">
-                <p className="text-base font-black uppercase tracking-[0.25em]">Corpore Life</p>
+                <p className="text-[14px] font-black uppercase tracking-[0.25em]">Corpore Life</p>
               </div>
               <div className="opacity-50">
-                <p className="text-sm font-bold uppercase tracking-widest">Outras Marcas</p>
+                <p className="text-[12px] font-bold uppercase tracking-widest">Outras Marcas</p>
               </div>
             </div>
 
@@ -71,7 +77,7 @@ export const BrandComparison: React.FC = () => {
                 <div key={idx} className="grid grid-cols-1 md:grid-cols-3 items-center py-6 px-6 md:px-12 hover:bg-white transition-colors group">
                   {/* Label (Mobile: Título / Desktop: Coluna 1) */}
                   <div className="mb-2 md:mb-0">
-                    <p className="text-[#063326] font-bold text-sm md:text-base">{item.label}</p>
+                    <p className="text-[#063326] font-bold text-[14px]">{item.label}</p>
                   </div>
 
                   {/* Coluna Corpore Life */}
@@ -79,7 +85,7 @@ export const BrandComparison: React.FC = () => {
                     <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
                       <i className="fa-solid fa-check text-white text-[10px]"></i>
                     </div>
-                    <p className="text-[#063326] text-sm font-semibold">{item.corpore}</p>
+                    <p className="text-[#063326] text-[14px] font-semibold">{item.corpore}</p>
                   </div>
 
                   {/* Coluna Outras Marcas */}
@@ -87,7 +93,7 @@ export const BrandComparison: React.FC = () => {
                     <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
                       <i className="fa-solid fa-xmark text-gray-400 text-[10px]"></i>
                     </div>
-                    <p className="text-gray-500 text-sm font-medium">{item.others}</p>
+                    <p className="text-gray-500 text-[14px] font-medium">{item.others}</p>
                   </div>
                 </div>
               ))}
@@ -103,7 +109,7 @@ export const BrandComparison: React.FC = () => {
                   ].map((badge, bIdx) => (
                     <div key={bIdx} className="flex items-center gap-2">
                        <i className={`fa-solid ${badge.icon} text-[#deb357] text-sm`}></i>
-                       <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#063326]">{badge.text}</span>
+                       <span className="text-[12px] font-extrabold uppercase tracking-widest text-[#063326]">{badge.text}</span>
                     </div>
                   ))}
                </div>
@@ -113,7 +119,7 @@ export const BrandComparison: React.FC = () => {
 
         {/* CTA Adicional */}
         <div className={`mt-12 text-center animeTexto ${reveal.className}`} style={{ transitionDelay: '400ms' }}>
-          <p className="text-gray-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">A tecnologia que seu cabelo esperava.</p>
+          <p className="text-gray-400 text-[12px] font-bold uppercase tracking-[0.2em] mb-4">A tecnologia que seu cabelo esperava.</p>
           <div className="flex justify-center items-center gap-2">
             <span className="h-px w-8 bg-gray-200"></span>
             <i className="fa-solid fa-certificate text-[#deb357]"></i>

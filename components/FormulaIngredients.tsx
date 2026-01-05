@@ -23,10 +23,16 @@ export const FormulaIngredients: React.FC = () => {
     <section className="py-24 bg-[#F1F5F2]">
       <div className="container mx-auto px-4">
         <div ref={reveal.ref} className={`text-center mb-20 animeTexto ${reveal.className}`}>
-          <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-4">
-            O Segredo do <span className="font-normal italic">'Blend Booster'</span>
+          {/* Kicker */}
+          <p className="text-[#E3C08D] font-bold text-[12px] uppercase tracking-[0.2em] mb-4">
+            FÓRMULA EXCLUSIVA
+          </p>
+
+          {/* Título */}
+          <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] mb-4 leading-[1]">
+            O Segredo do <span className="font-normal">'Blend Booster'</span>
           </h2>
-          <p className="text-gray-500 text-lg font-light">A união da botânica brasileira com a tecnologia do ozônio.</p>
+          <p className="text-gray-500 text-[14px] font-light">A união da botânica brasileira com a tecnologia do ozônio.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-24">
@@ -36,8 +42,8 @@ export const FormulaIngredients: React.FC = () => {
                   <i className={`fa-solid ${item.icon} text-2xl`}></i>
                </div>
                <h4 className="text-lg font-bold text-[#063326] mb-1 leading-tight">{item.name}</h4>
-               <p className="text-[#deb357] text-[10px] font-bold uppercase tracking-[0.2em] mb-4">{item.role}</p>
-               <p className="text-gray-400 text-sm font-light leading-relaxed">{item.desc}</p>
+               <p className="text-[#deb357] text-[12px] font-bold uppercase tracking-[0.2em] mb-4">{item.role}</p>
+               <p className="text-gray-400 text-[14px] font-light leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -49,12 +55,12 @@ export const FormulaIngredients: React.FC = () => {
               {steps.map((step, i) => (
                 <div key={i} className="flex gap-6 items-start">
                   <span className="text-3xl font-serif italic text-[#deb357] leading-none">{i + 1}.</span>
-                  <p className="text-lg font-light leading-relaxed opacity-90">{step}</p>
+                  <p className="text-[14px] font-light leading-relaxed opacity-90">{step}</p>
                 </div>
               ))}
             </div>
             <div className="pt-8 border-t border-white/10">
-               <p className="text-[#deb357] text-xs font-bold uppercase tracking-[0.2em]">
+               <p className="text-[#deb357] text-[12px] font-bold uppercase tracking-[0.2em]">
                  Frequência: <span className="text-white font-light normal-case tracking-normal ml-2">Uso diário ou conforme necessidade</span>
                </p>
             </div>

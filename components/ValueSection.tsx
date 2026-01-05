@@ -39,8 +39,14 @@ export const ValueSection: React.FC = () => {
       <div className="container mx-auto px-4">
         {/* Título no topo */}
         <div ref={reveal.ref} className={`text-center mb-20 animeTexto ${reveal.className}`}>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#063326]">
-            Por que sua pele merece o <span className="font-normal italic">melhor</span>
+          {/* Kicker */}
+          <p className="text-[#E3C08D] font-bold text-xs uppercase tracking-[0.2em] mb-4">
+            VALORES DA MARCA
+          </p>
+
+          {/* Título */}
+          <h2 className="text-3xl md:text-[44px] font-bold text-[#063326] leading-tight">
+            Por que sua pele merece o <span className="font-normal">melhor</span>
           </h2>
         </div>
         

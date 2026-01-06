@@ -67,7 +67,7 @@ export const FormulaIngredients: React.FC = () => {
           </div>
           <div className="w-full lg:w-1/2 bg-[#deb357]/20 flex items-center justify-center overflow-hidden min-h-[400px]">
              <img 
-               src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+               src="https://i.postimg.cc/Qxm53jM8/20260106-1636-Aplicacao-de-Oleo-Capilar-remix-01keacx6d3ewbt9rm53yw3z651.png" 
                alt="Processo Laboratorial AQ Scalp Blend" 
                className="w-full h-full object-cover grayscale-[10%] brightness-110"
                style={{ maxHeight: '650px' }}

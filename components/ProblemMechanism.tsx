@@ -68,12 +68,10 @@ export const ProblemMechanism: React.FC = () => {
           {/* Coluna da Direita: Vídeo YouTube (Proporção 9:16) */}
           <div className="w-full lg:w-5/12 px-4 flex justify-center">
             <div className={`relative rounded-[32px] overflow-hidden shadow-2xl w-full max-w-[360px] aspect-[9/16] bg-black animeTexto ${reveal.className}`}>
-              {/* Fix: use camelCase for React iframe attributes */}
               <iframe 
-                width="337" 
-                height="599" 
-                src="https://www.youtube.com/embed/CmxOVLRcgus" 
-                title="" 
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/CmxOVLRcgus?rel=0" 
+                title="Mecanismo de Ação" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerPolicy="strict-origin-when-cross-origin" 
@@ -81,14 +79,14 @@ export const ProblemMechanism: React.FC = () => {
               ></iframe>
               
               {/* Badge de Overlay */}
-              <div className="absolute top-6 right-6 z-10">
-                <div className="bg-[#deb357] text-[#063326] text-[12px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-2xl">
-                  Assista o Vídeo
+              <div className="absolute top-6 right-6 z-10 pointer-events-none">
+                <div className="bg-[#deb357] text-[#063326] text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full shadow-lg backdrop-blur-sm bg-opacity-90">
+                  Assista
                 </div>
               </div>
 
               {/* Acabamento de borda interna */}
-              <div className="absolute inset-0 border-[10px] border-white/5 rounded-[32px] pointer-events-none"></div>
+              <div className="absolute inset-0 border-[6px] border-white/10 rounded-[32px] pointer-events-none z-20"></div>
             </div>
           </div>
 

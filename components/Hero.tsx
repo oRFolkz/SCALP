@@ -123,7 +123,7 @@ export const Hero: React.FC = () => {
               >
                 {/* Imagem do DEPOIS (Fundo) */}
                 <img 
-                  src="https://cdn.prod.website-files.com/64ac367920744d8ec5cb556f/68c43d1c520703a6ea9114e8_depoimento-victor-daher-2-p-2000.webp" 
+                  src="https://i.postimg.cc/VNMFq3YN/3.png" 
                   alt="Depois" 
                   className="absolute inset-0 w-full h-full object-cover pointer-events-none"
                 />
@@ -134,7 +134,7 @@ export const Hero: React.FC = () => {
                   style={{ width: `${sliderPos}%` }}
                 >
                   <img 
-                    src="https://cdn.prod.website-files.com/64ac367920744d8ec5cb556f/68c43d1cda7206969b9aed53_depoimento-victor-daher.webp" 
+                    src="https://i.postimg.cc/WbbSBW79/2.png" 
                     alt="Antes" 
                     className="absolute inset-0 w-full h-full object-cover"
                     style={{ width: `${100 / (sliderPos / 100)}%`, maxWidth: 'none' }}
@@ -175,7 +175,7 @@ export const Hero: React.FC = () => {
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-px bg-[#deb357]"></div>
-                  <p className="text-[#deb357] text-[9px] font-bold uppercase tracking-widest">Victor Daher</p>
+                  <p className="text-[#deb357] text-[9px] font-bold uppercase tracking-widest">Pedro Alves</p>
                 </div>
               </div>
 

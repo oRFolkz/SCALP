@@ -47,14 +47,15 @@ export const BenefitsProof: React.FC = () => {
              <div className="flex flex-col gap-6">
                 <h3 className="text-2xl font-bold text-[#063326] mb-2">Um Blend, Múltiplos Alvos:</h3>
                 {[
+                  { title: "Estimula o crescimento", desc: "Ativa folículos para o nascimento de novos fios." },
+                  { title: "Combate a queda", desc: "Fortalece a ancoragem e interrompe a perda capilar." },
                   { title: "Combate a Alopecia e Rarefação", desc: "Preenche falhas visíveis na raiz." },
                   { title: "Controle de Caspa e Seborreia", desc: "Ação fungicida potente da Melaleuca." },
                   { title: "Dermatite Capilar", desc: "Alivia a inflamação, coceira e descamação." },
                   { title: "Psoríase", desc: "Auxilia na redução de placas e acalma a pele." },
                   { title: "Inibe o aparecimento de fungos e bactérias", desc: "Proteção antimicrobiana profunda e natural." },
                   { title: "Ação Cicatrizante", desc: "Ideal para feridas e sensibilidade extrema." },
-                  { title: "Uso em Sobrancelhas", desc: "Recupera o desenho natural do seu olhar." },
-                  { title: "Combate a queda", desc: "Estimula o crescimento" }
+                  { title: "Uso em Sobrancelhas", desc: "Recupera o desenho natural do seu olhar." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-center group">
                     <div className="w-8 h-8 bg-[#063326] text-white flex items-center justify-center rounded-full flex-shrink-0 group-hover:bg-[#deb357] transition-colors">
